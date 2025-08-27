@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  pubsub-emulator:
+    # image: gcr.io/google.com/cloudsdktool/google-cloud-cli:emulators
+    image: google/cloud-sdk:emulators
+    container_name: pubsub-emulator
+    ports:
+      - "8085:8085" # Map host port 8085 to container port 8085
+    command: gcloud beta emulators pubsub start --host-port=0.0.0.0:8085 --project=your-project-id
+    # Optional: Add volumes for persistent data if needed
+    # volumes:
+    #   - ./pubsub-data:/opt/pubsub-data
