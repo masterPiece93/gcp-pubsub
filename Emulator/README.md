@@ -24,7 +24,7 @@ docker compose -f emulator.docker-compose.yml up
 
 **Point your application towards this pubsub :**
 
-As with real GCP Pub?Sub we use service account file & expose *GOOGLE_APPLICATION_CREDENTIALS* env variable to point at that file , here with Emulator we use following two varibales on the terminal/shell/cmd where we start our code ( publisher or subscriber script ) :
+As with real GCP Pub/Sub we use service account file & expose *GOOGLE_APPLICATION_CREDENTIALS* env variable to point at that file , but here with Emulator we use following two varibales on the terminal/shell/cmd where we start our code ( publisher or subscriber script ) :
 
 ```sh
 export PUBSUB_EMULATOR_HOST=localhost:{port}
