@@ -10,4 +10,4 @@ Supported Languages
 Index
 | Name | Description | Tags |
 | ---- | ----------- | ---- |
-| [simple_pull_subscriber_system](./python/simple_pull_subscriber_system) | demonstrates a simple async pull type subscriber | - |
+| [simple_pull_subscriber_system](./python/simple_pull_subscriber_system) | demonstrates a simple async pull type subscriber | `python` |
